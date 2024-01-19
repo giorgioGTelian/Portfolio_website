@@ -235,8 +235,11 @@ html(lang='en')
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
-                            | ho lavorato con questi fantastici freelancer per anni, sono i migliori nel loro campo.
-
+                            | ho lavorato con questi fantastici per anni, sono i migliori nel loro campo.
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Le nostre tecnologie
         // Clients
         div.py-5
             .container
@@ -258,8 +261,8 @@ html(lang='en')
         section#contact.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Contattaci
+                    h3.section-subheading.text-muted vogliamo sapere come possiamo aiutarti!
 
                 // * * * * * * * * * * * * * * *
                 // * * SB Forms Contact Form * *
@@ -270,7 +273,7 @@ html(lang='en')
                 // https://startbootstrap.com/solution/contact-forms
                 // to get an API token!
 
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                form#contactForm(data-sb-form-api-token='678c5aaa-6e15-4df2-80a7-b5367be2711d')
                     .row.align-items-stretch.mb-5
                         .col-md-6
                             .form-group
@@ -282,7 +285,7 @@ html(lang='en')
                                     data-sb-validations='required'
                                 )
                                 .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+                                    | Ci vuole un nome
 
                             .form-group
 
@@ -293,9 +296,9 @@ html(lang='en')
                                     data-sb-validations='required,email'
                                 )
                                 .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
+                                    | una email è richiesta
                                 .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                                    | l'email non è valida
 
                             .form-group.mb-md-0
 
@@ -306,7 +309,7 @@ html(lang='en')
                                     data-sb-validations='required'
                                 )
                                 .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+                                    | un numero di telefono è richiesto
 
                         .col-md-6
                             .form-group.form-group-textarea.mb-md-0
@@ -317,7 +320,7 @@ html(lang='en')
                                     data-sb-validations='required'
                                 )
                                 .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                                    | ci vuole un messaggio
 
                     // Submit success message
                     //
@@ -326,10 +329,8 @@ html(lang='en')
 
                     #submitSuccessMessage.d-none
                         .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                            .fw-bolder Grazie per averci contattato!
+                            
 
                     // Submit error message
                     //
@@ -337,18 +338,18 @@ html(lang='en')
                     // an error submitting the form
 
                     #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
+                        .text-center.text-danger.mb-3 Errore
 
                     // Submit Button
                     .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') invia messaggio
 
         // Footer
         footer.footer.py-4
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2023
+                        | Copyright &copy; Giorgio 2022
                     .col-lg-4.my-3.my-lg-0
                         a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
                             i.fab.fa-twitter
